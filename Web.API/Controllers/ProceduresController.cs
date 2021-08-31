@@ -8,6 +8,7 @@ using Web.API.Data.Entities;
 
 namespace Web.API.Controllers
 {
+   [Authorize(Roles = "Admin")]
     public class ProceduresController : Controller
     {
         private readonly DataContext _context;

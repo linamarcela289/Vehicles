@@ -7,6 +7,7 @@ using Web.API.Data;
 using Web.API.Data.Entities;
 namespace Web.API.Controllers
 {
+   [Authorize(Roles = "Admin")]
     public class DocumentTypesController : Controller
     {
         private readonly DataContext _context;
